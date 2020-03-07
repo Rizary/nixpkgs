@@ -9,14 +9,11 @@ buildRustPackage rec {
   src = fetchFromGitHub {
     owner = "redox-os";
     repo = "ion";
-    rev = version;
-    sha256 = "0i0acl5nw254mw8dbfmb4792rr71is98a5wg32yylfnlrk7zlf8z";
+    rev = "994b82071569d13fdd7f752af92e64430823e77d";
+    sha256 = "088325nlvv1f0c9m8hlnh7v6jbs4dpr3ji9q88fmql8f9nnidcgj";
   };
 
-  # Delete this on next update; see #79975 for details
-  legacyCargoFetcher = true;
-
-  cargoSha256 = "1hs01b1rhbpafxlhw661k907rznqhcgyng85njkb99bg4lxwxaap";
+  cargoSha256 = "02wy2sgacxn05j3n5kn57ajyjvk1sg6261rdz7drqgrqsd2zgpa5";
 
   meta = with stdenv.lib; {
     description = "Modern system shell with simple (and powerful) syntax";
